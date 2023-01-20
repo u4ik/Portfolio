@@ -7,10 +7,10 @@ import { Navbar } from './components'
 import './App.css'
 
 
-//TODO - Hamburger Nav menu 
+
 
 //TODO - Pick a color scheme (semanticUI)
-//TODO - Find more inspiration on how I want the layout
+
 
 
 function App() {
@@ -27,7 +27,6 @@ function App() {
     <div className="App">
       <CSSTransition
         in={showNav}
-
         timeout={300}
         classNames="fade slide-top"
         unmountOnExit
@@ -38,7 +37,6 @@ function App() {
 
 
       <Routes>
-
         <Route exact path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/contact' element={<Contact />} />

@@ -1,14 +1,14 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { CSSTransition } from 'react-transition-group';
-import { Image, Reveal, Step, Visibility, Divider, Container, Transition } from 'semantic-ui-react'
+import { Divider, Container, Transition } from 'semantic-ui-react'
 import Cloud from '../../assets/cloud.png';
 import Background from '../../assets/landscapegrey.png';
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 import { Badge } from '../../components'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { motion } from "framer-motion";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 import './Header.css'
 
@@ -16,10 +16,9 @@ const Header = () => {
     const [showBackground, setShowBackground] = useState(false);
 
     const [showCloud, setShowCloud] = useState(false);
+    const { scrollY, scrollYProgress } = useScroll();
 
 
-
-    const ref = useRef(null);
     useEffect(() => {
         AOS.init({ duration: 2000 })
         setTimeout(() => {
@@ -29,11 +28,11 @@ const Header = () => {
             setShowCloud(true)
         }, 500)
 
-
     }, [])
-    const handleUpdate = (e, { calculations }) => {
-        setCalculations({ calculations })
-    }
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        console.log("Page scroll: ", latest)
+    })
+
     return (
         <div data-aos="fade" data-aos-easing='ease-in-out' >
 
@@ -47,7 +46,7 @@ const Header = () => {
                         timeout={300}
                         classNames="fade"
                         unmountOnExit>
-                        <img src={Background} alt="" className='background' />
+                        <img style={{ opacity: scrollYProgress }} src={Background} alt="" className='background' />
                     </CSSTransition >
                     {/* Cloud */}
                     <CSSTransition
@@ -131,16 +130,7 @@ const Header = () => {
 
                     </div>
                 </div>
-
-
-
-
-
-
-
             </div >
-
-
         </div >
     )
 }
