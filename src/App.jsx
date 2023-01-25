@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 
 import { Home, Projects, Contact, Resume } from './pages'
-import { Navbar } from './components'
+import { Navbar, Sidebar } from './components'
 import './App.css'
 
 
@@ -15,16 +15,21 @@ import './App.css'
 
 function App() {
   const [showNav, setShowNav] = useState(false);
+  const [showSide, setShowSide] = useState(false);
 
 
   useEffect(() => {
     setTimeout(() => {
       setShowNav(true)
     }, 1500)
+    setTimeout(() => {
+      setShowSide(true)
+    }, 1500)
   }, [])
 
   return (
     <div className="App">
+
       <CSSTransition
         in={showNav}
         timeout={300}
@@ -34,7 +39,14 @@ function App() {
 
         <Navbar />
       </CSSTransition>
-
+      <CSSTransition
+        in={showNav}
+        timeout={300}
+        classNames="fade slide-left"
+        unmountOnExit
+      >
+        <Sidebar />
+      </CSSTransition>
 
       <Routes>
         <Route exact path='/' element={<Home />} />
@@ -46,7 +58,7 @@ function App() {
 
 
 
-    </div>
+    </div >
   )
 }
 
