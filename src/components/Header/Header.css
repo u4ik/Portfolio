@@ -150,3 +150,9 @@ header {
 .about-text {
     color: white;
 }
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}

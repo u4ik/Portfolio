@@ -15,7 +15,8 @@ const Sidebar = () => {
                     label=''
                     icon="linkedin"
                     size='big'
-                    margin=".2em .2em .2em 0em"
+                    margin=".2em .1em .2em 0em"
+                    // margin="auto"
                     width='4em'
                     link="https://www.linkedin.com/in/amitsmangat/"
                 />
@@ -24,7 +25,7 @@ const Sidebar = () => {
                     label=''
                     icon="github"
                     size='big'
-                    margin=".5em .2em .2em 0em"
+                    margin=".5em .1em .2em 0em"
                     width='4em'
                     link="https://github.com/u4ik"
                 />
