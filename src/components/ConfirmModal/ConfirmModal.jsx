@@ -18,7 +18,10 @@ const ConfirmModal = ({ text = '', callback, navigatePath }) => {
 
         < Modal
             basic
-            onClose={() => setOpen(false)}
+            onClose={() => {
+                setOpen(false)
+                navigate(navigatePath);
+            }}
             onOpen={() => setOpen(true)}
             open={open}
             size='small'
