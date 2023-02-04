@@ -5,8 +5,6 @@ import { useNavigate } from 'react-router-dom'
 const ConfirmModal = ({ text = '', callback, navigatePath }) => {
     const [open, setOpen] = useState(false)
 
-
-
     const navigate = useNavigate();
     useEffect(() => {
         setOpen(true)

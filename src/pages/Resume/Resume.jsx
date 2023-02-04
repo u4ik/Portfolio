@@ -3,14 +3,10 @@ import { useNavigate } from 'react-router-dom'
 import { ConfirmModal } from '../../components'
 import ResId from './Resume_Helper'
 
-
-
 const Resume = () => {
     const handleDownload = (option) => {
-        // TODO : PUT RESUME DOWNLOAD STUFF HERE 
         window.location.href = option === 'download' ? `https://drive.google.com/uc?export=download&id=${ResId}` :
             `https://drive.google.com/file/d/${ResId}/view`
-
     }
 
     return (
