@@ -1,0 +1,39 @@
+.project-container {
+  border: solid rgba(255, 255, 255, 0.3) 0.1em;
+  border-radius: 1em;
+  /* margin-inline: 5em; */
+  margin-inline: auto;
+  width: 90%;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  color: white;
+  padding: 1em;
+  /* min-height: 100vh; */
+  /* height: 100vh; */
+  /* overflow-y: auto; */
+}
+
+.header {
+  color: white !important;
+}
+
+.extra {
+  color: grey !important;
+}
+
+.meta {
+  color: white !important;
+}
+
+/* img {
+  margin: none;
+} */
+
+.ui.small.image {
+  width: auto !important;
+}
+
+.ui.big.image {
+  max-width: 20em;
+  /* border-radius: 50em; */
+}
