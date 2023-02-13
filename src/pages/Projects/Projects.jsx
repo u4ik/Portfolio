@@ -46,7 +46,7 @@ const Projects = () => {
 
         {
             header: 'AskAI',
-            image: 'https://i.ibb.co/5kqkGt9/Ask-AI-demo2.png',
+            image: 'https://i.ibb.co/TmgDrm3/Ask-AI-demo2.png',
             description: "CLI application to interact with OpenAI's chatgpt",
             additional: 'JavaScript Terminal App',
             gitHub: "https://github.com/u4ik/AskAICLI",
