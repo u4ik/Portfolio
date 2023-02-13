@@ -4,8 +4,9 @@ import { CSSTransition } from 'react-transition-group';
 import { Divider, Container, Transition } from 'semantic-ui-react'
 import Cloud from '../../assets/cloud.png';
 import Background from '../../assets/landscapegrey.png';
-
+import skills from './Skills_List'
 import { Badge } from '../../components'
+import aboutText from './About_Text'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
@@ -89,7 +90,7 @@ const Header = () => {
                             >
                                 <h1 className="about-headings" >About</h1>
                                 <p className="about-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laudantium, ex facilis culpa nihil doloribus voluptatem architecto et? Unde dolor, aliquid iste facere veniam reiciendis dolorem perferendis vero. Rerum numquam voluptatibus possimus incidunt, placeat
+                                    {aboutText}
                                 </p>
                             </motion.div>
                         </div>
@@ -110,20 +111,21 @@ const Header = () => {
                                 <h1 className="about-headings" >Skills</h1>
 
                                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: '', gap: '.5em' }}>
+
                                     <div className='col'>
+                                        {
+                                            skills.map((i, idx) => {
+                                                return <Badge key={idx} color={i.color} label={i.label} link={i.link} />
+                                            })
+                                        }
+                                    </div>
+                                    {/* <div className='col'>
                                         <Badge color="green" label="Node" />
                                         <Badge color="white" label="JavaScript" />
                                         <Badge color="blue" label="TypeScript" />
                                         <Badge color="olive" label="C#" />
                                         <Badge color="yellow" label="Python" />
-                                    </div>
-                                    <div className='col'>
-                                        <Badge color="green" label="Node" />
-                                        <Badge color="white" label="JavaScript" />
-                                        <Badge color="blue" label="TypeScript" />
-                                        <Badge color="olive" label="C#" />
-                                        <Badge color="yellow" label="Python" />
-                                    </div>
+                                    </div> */}
                                 </div>
                             </motion.div>
                         </div>
