@@ -27,7 +27,7 @@ function Item({ image, github = '', header = 'default header', description = 'de
                                 size='default'
                                 margin=".1em .1em .1em .1em"
                                 width='3em'
-                                padding='.1em'
+                                padding='0.07em'
                                 link={github}
                             />
                             {
@@ -38,9 +38,8 @@ function Item({ image, github = '', header = 'default header', description = 'de
                                     icon="npm"
                                     size='large'
                                     margin=".1em .1em .1em .1em"
-                                    // margin="auto"
                                     width='3em'
-                                    padding='.1em'
+                                    padding='0'
                                     link={npm.link}
                                 />
                             }
@@ -52,9 +51,8 @@ function Item({ image, github = '', header = 'default header', description = 'de
                                     icon=""
                                     size='large'
                                     margin=".1em .1em .1em .1em"
-                                    // margin="auto"
                                     width='3em'
-                                    padding='.1em'
+                                    padding='0.07em'
                                     link={viewLink}
                                 />
                             }
