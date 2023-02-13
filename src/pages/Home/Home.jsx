@@ -9,12 +9,9 @@ import { Header } from '../../components'
 import './Home.css'
 
 const Home = () => {
-
     return (
         <>
             <Header />
-
-
         </>
     )
 }

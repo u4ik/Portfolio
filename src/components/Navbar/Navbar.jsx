@@ -19,7 +19,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Popup
-                        trigger={<Link to="/resume"><i className={`icon download green small`} style={{ scale: '', marginRight: '' }}></i>  Resume </Link>}
+                        trigger={<Link to="/resume"><i className={`icon download green small`} style={{ scale: '', marginRight: '' }}></i>Resume </Link>}
                         content='Download Resume'
                         inverted
                         size='mini'

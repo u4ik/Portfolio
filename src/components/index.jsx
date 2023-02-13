@@ -4,6 +4,7 @@ import Header from './Header/Header'
 import Sidebar from './Sidebar/Sidebar'
 import ConfirmModal from './ConfirmModal/ConfirmModal'
 import Item from './Item/Item'
+import FadeInOnScroll from './FadeInOnScroll/FadeInOnScroll'
 
 
-export { Navbar, Badge, Header, ConfirmModal, Sidebar, Item };
+export { Navbar, Badge, Header, ConfirmModal, Sidebar, Item, FadeInOnScroll };

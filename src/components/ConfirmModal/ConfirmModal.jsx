@@ -12,8 +12,6 @@ const ConfirmModal = ({ text = '', callback, navigatePath }) => {
     }, [])
 
     return (
-
-
         < Modal
             basic
             onClose={() => {
