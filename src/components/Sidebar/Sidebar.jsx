@@ -18,15 +18,17 @@ const Sidebar = () => {
                     margin=".2em .1em .2em 0em"
                     // margin="auto"
                     width='4em'
+                    padding='.3em'
                     link="https://www.linkedin.com/in/amitsmangat/"
                 />
                 <Badge
                     color='grey'
-                    label=''
+                    // label='github'
                     icon="github"
                     size='big'
                     margin=".5em .1em .2em 0em"
                     width='4em'
+                    padding='.3em'
                     link="https://github.com/u4ik"
                 />
 

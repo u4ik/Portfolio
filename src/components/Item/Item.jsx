@@ -2,7 +2,7 @@ import React from 'react'
 import { Image, Item as SemItem, Divider } from 'semantic-ui-react';
 import { Badge } from '../index';
 
-function Item({ image, header = 'default header', description = 'default', additional = "", npm = "" }) {
+function Item({ image, github = '', header = 'default header', description = 'default', additional = "", npm = "", viewLink = "" }) {
     return (
         <SemItem.Group>
             <SemItem>
@@ -24,11 +24,11 @@ function Item({ image, header = 'default header', description = 'default', addit
                                 color='grey'
                                 label=''
                                 icon="github"
-                                size='large'
+                                size='default'
                                 margin=".1em .1em .1em .1em"
-                                // margin="auto"
-                                width='4em'
-                                link="https://www.linkedin.com/in/amitsmangat/"
+                                width='3em'
+                                padding='.1em'
+                                link={github}
                             />
                             {
                                 npm &&
@@ -39,8 +39,23 @@ function Item({ image, header = 'default header', description = 'default', addit
                                     size='large'
                                     margin=".1em .1em .1em .1em"
                                     // margin="auto"
-                                    width='4em'
+                                    width='3em'
+                                    padding='.1em'
                                     link={npm.link}
+                                />
+                            }
+                            {
+                                viewLink &&
+                                <Badge
+                                    color='blue'
+                                    label='View'
+                                    icon=""
+                                    size='large'
+                                    margin=".1em .1em .1em .1em"
+                                    // margin="auto"
+                                    width='3em'
+                                    padding='.1em'
+                                    link={viewLink}
                                 />
                             }
 
