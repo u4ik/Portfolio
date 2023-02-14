@@ -50,6 +50,18 @@ export default [
         }
     },
     {
+        header: 'AmazonCLI',
+        image: 'https://i.ibb.co/rmn1vnq/results.png',
+        description: "CLI application to search Amazon.com",
+        additional: 'Python Terminal App',
+        gitHub: "https://github.com/u4ik/AmazonCLI",
+        npm: {
+            link: "https://www.npmjs.com/package/amazon-search-cli",
+            img1: "https://img.shields.io/npm/dt/amazon-search-cli.svg?style=flat",
+            img2: "https://img.shields.io/npm/v/amazon-search-cli.svg?style=flat"
+        }
+    },
+    {
         header: 'Lottery',
         image: 'https://i.ibb.co/7Sty091/lottery.png',
         description: "Megamillions winning number checker, along with the date a number has won in a specific position. ",

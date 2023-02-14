@@ -22,13 +22,16 @@ const Header = () => {
 
     useEffect(() => {
         AOS.init({ duration: 2000 })
-        setTimeout(() => {
+        const showBack = setTimeout(() => {
             setShowBackground(true)
         }, 300)
-        setTimeout(() => {
+        const showCl = setTimeout(() => {
             setShowCloud(true)
         }, 500)
-
+        return () => {
+            clearTimeout(showBack)
+            clearTimeout(showCl)
+        }
     }, [])
     useMotionValueEvent(scrollY, "change", (latest) => {
         console.log("Page scroll: ", latest)
