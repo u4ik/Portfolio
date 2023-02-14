@@ -39,12 +39,15 @@ const Navbar = () => {
                     <Link to="/projects"><i className={`icon folder open brown small`} style={{ scale: '', marginRight: '' }}></i>Projects</Link>
                 </li>
                 <li>
-                    <Popup
-                        trigger={<Link to="/resume"><i className={`icon download green small`} style={{ scale: '', marginRight: '' }}></i>Resume </Link>}
+                    <Link to="/resume"><i className={`icon download green small`} style={{ scale: '', marginRight: '' }}></i>Resume </Link>
+                    {/* <Popup
+                        trigger={
+                        <Link to="/resume"><i className={`icon download green small`} style={{ scale: '', marginRight: '' }}></i>Resume </Link>
+                    }
                         content='Download Resume'
                         inverted
                         size='mini'
-                    />
+                    /> */}
                 </li>
             </ul>
         </nav>

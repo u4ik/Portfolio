@@ -97,13 +97,18 @@ const Header = () => {
                                             })
                                         }
                                     </div>
-                                    {/* <div className='col'>
-                                        <Badge color="green" label="Node" />
-                                        <Badge color="white" label="JavaScript" />
-                                        <Badge color="blue" label="TypeScript" />
-                                        <Badge color="olive" label="C#" />
-                                        <Badge color="yellow" label="Python" />
-                                    </div> */}
+                                    <div className='col'>
+                                        <Badge color="blue" label="PostgreSQL" />
+                                        <Badge color="orange" label="REST APIs" />
+                                        <Badge color="blue" label="React" />
+                                        <Badge color="red" label="MongoDB" />
+                                        <Badge color="grey" label="Redux" />
+                                        <Badge color="blue" label="Recoil" />
+                                    </div>
+
+                                </div>
+                                <div className="hide" style={{ marginTop: '2em' }}>
+                                    <Divider >_______________________________________</Divider>
                                 </div>
                             </FadeInOnScroll>
                         </div>

@@ -26,4 +26,9 @@ export default [
         label: "Python",
         link: ""
     },
+    {
+        color: "green",
+        label: "Redux",
+        link: ""
+    },
 ]
