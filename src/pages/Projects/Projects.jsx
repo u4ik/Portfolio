@@ -9,7 +9,7 @@ import projects from './Project_List'
 const Projects = () => {
     return (
         // <div className="animation" style={{ color: 'white', display: 'flex', height: '100vh' }} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div style={{ height: '100vh', overflowY: 'auto' }}>
+        <div style={{ height: '100vh', overflowY: 'auto', marginBottom: '5em', marginTop: '3em' }}>
 
             <div className="project-container">
                 {

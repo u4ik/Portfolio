@@ -10,28 +10,32 @@ const Sidebar = () => {
         <div className="sidebar-container">
             <div className="sidebar-container_
             wrap">
-                <Badge
-                    color='blue'
-                    label=''
-                    icon="linkedin"
-                    size='big'
-                    margin=".2em .1em .2em 0em"
-                    // margin="auto"
-                    width='4em'
-                    padding='.3em'
-                    link="https://www.linkedin.com/in/amitsmangat/"
-                />
-                <Badge
-                    color='grey'
-                    // label='github'
-                    icon="github"
-                    size='big'
-                    margin=".5em .1em .2em 0em"
-                    width='4em'
-                    padding='.3em'
-                    link="https://github.com/u4ik"
-                />
+                <div style={{ display: 'flex', flexDirection: 'row', gap: '.5em', justifyContent: 'center' }}>
 
+                    <Badge
+                        color='blue'
+                        label=''
+                        icon="linkedin"
+                        size='big'
+                        margin=".1em .1em .1em .1em"
+                        // margin="auto"
+                        width='8em'
+                        padding='.2em'
+
+                        link="https://www.linkedin.com/in/amitsmangat/"
+                    />
+                    <Badge
+                        color='grey'
+                        label=''
+                        icon="github"
+                        size='big'
+                        margin=".1em .1em .1em .1em"
+                        width='8em'
+                        padding='.2em'
+                        link="https://github.com/u4ik"
+                    />
+
+                </div>
             </div>
         </div>
     )

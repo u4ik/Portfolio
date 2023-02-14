@@ -1,10 +1,10 @@
 .project-container {
-  border: solid rgba(255, 255, 255, 0.3) 0.1em;
+  /* border: solid rgba(255, 255, 255, 0.3) 0.1em; */
   border-radius: 1em;
   /* margin-inline: 5em; */
   margin-inline: auto;
   width: 90%;
-  margin-top: 5em;
+  margin-top: 2em;
   margin-bottom: 5em;
   color: white;
   padding: 1em;

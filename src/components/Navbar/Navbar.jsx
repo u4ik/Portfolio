@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <nav>
-            <Popup
+            {/* <Popup
                 on='click'
                 inverted
                 hideOnScroll
@@ -27,7 +27,7 @@ const Navbar = () => {
                 content={'Currently importing my projects and redeploying 🛠️... \n Certain parts of the my site may not be available. \n Projects are currently being prioritized.'}
                 size='mini'
                 position='bottom center'
-                wide />
+                wide /> */}
             <ul>
                 <li>
                     <Link to="/"><i className={`icon home blue small`} style={{ marginRight: '' }}></i>Home</Link>
