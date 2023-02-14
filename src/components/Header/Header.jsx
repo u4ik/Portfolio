@@ -15,10 +15,8 @@ import './Header.css'
 
 const Header = () => {
     const [showBackground, setShowBackground] = useState(false);
-
     const [showCloud, setShowCloud] = useState(false);
     const { scrollY, scrollYProgress } = useScroll();
-
 
     useEffect(() => {
         AOS.init({ duration: 2000 })
@@ -33,15 +31,14 @@ const Header = () => {
             clearTimeout(showCl)
         }
     }, [])
+
     useMotionValueEvent(scrollY, "change", (latest) => {
         console.log("Page scroll: ", latest)
     })
 
     return (
         <div data-aos="fade" data-aos-easing='ease-in-out' >
-
             <div className="wrapper">
-
                 <header style={{ display: 'flex', flexDirection: 'column' }} >
                     {/* Background */}
                     <CSSTransition
@@ -69,7 +66,6 @@ const Header = () => {
                                 data-aos-delay="500" data-aos-once="false">Web Developer</p>
                         </div>
                     </FadeInOnScroll>
-
                 </header >
 
                 <div className="about_skills-overlay">
@@ -105,14 +101,12 @@ const Header = () => {
                                         <Badge color="grey" label="Redux" />
                                         <Badge color="blue" label="Recoil" />
                                     </div>
-
                                 </div>
                                 <div className="hide" style={{ marginTop: '2em' }}>
                                     <Divider >_______________________________________</Divider>
                                 </div>
                             </FadeInOnScroll>
                         </div>
-
                     </div>
                 </div>
             </div >

@@ -8,7 +8,6 @@ const ConfirmModal = ({ text = '', callback, navigatePath }) => {
     const navigate = useNavigate();
     useEffect(() => {
         setOpen(true)
-
     }, [])
 
     return (
@@ -21,18 +20,20 @@ const ConfirmModal = ({ text = '', callback, navigatePath }) => {
             onOpen={() => setOpen(true)}
             open={open}
             size='small'
-
         >
             <Header icon>
                 <Icon name='download' color='green' />
                 Amit Mangat's Resume
             </Header>
+
             <Modal.Content>
                 <p style={{ color: 'white' }}>
                     {text}
                 </p>
             </Modal.Content>
+
             <Modal.Actions>
+
                 <Button basic color='red' inverted onClick={() => {
                     setOpen(false)
                     navigate(navigatePath);
@@ -48,7 +49,6 @@ const ConfirmModal = ({ text = '', callback, navigatePath }) => {
                     <Icon name='eye' /> View
                 </Button>
 
-
                 <Button color='green' inverted onClick={() => {
                     navigate(navigatePath);
                     callback('download');
@@ -56,6 +56,7 @@ const ConfirmModal = ({ text = '', callback, navigatePath }) => {
                 }}>
                     <Icon name='checkmark' /> Yes
                 </Button>
+
             </Modal.Actions>
         </Modal >
 
