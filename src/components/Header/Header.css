@@ -37,6 +37,7 @@ body {
   overflow-y: overlay;
   overflow-x: hidden;
   perspective: 10px;
+  margin-bottom: 5em;
 }
 
 * {
