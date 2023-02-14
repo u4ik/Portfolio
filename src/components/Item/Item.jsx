@@ -19,7 +19,7 @@ function Item({ image, github = '', header = 'default header', description = 'de
                                 <SemItem.Image size='small' src={npm.img2} />
                             </div>
                         }
-                        <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '.5em', marginTop: '1em', marginBottom: '1em', maxHeight: '', alignItems: 'center' }}>
+                        <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '.5em', marginTop: '1em', marginBottom: '0', maxHeight: '', alignItems: 'center' }}>
                             <Badge
                                 color='grey'
                                 label=''
