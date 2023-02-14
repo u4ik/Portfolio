@@ -6,7 +6,7 @@ function Item({ image, github = '', header = 'default header', description = 'de
     return (
         <SemItem.Group>
             <SemItem>
-                <SemItem.Image fluid={true} ceneter={true} size='large' src={image} />
+                <SemItem.Image centered={true} rounded={true} size='medium' src={image} style={{ maxWidth: '500px', minWidth: '400px' }} />
                 <SemItem.Content verticalAlign='middle'  >
                     <SemItem.Header as='a'>{header}</SemItem.Header>
                     <SemItem.Meta>{description}</SemItem.Meta>

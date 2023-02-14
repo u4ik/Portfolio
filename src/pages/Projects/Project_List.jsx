@@ -51,7 +51,7 @@ export default [
     },
     {
         header: 'AmazonCLI',
-        image: 'https://i.ibb.co/rmn1vnq/results.png',
+        image: 'https://i.ibb.co/Jqtzs13/amazon.png',
         description: "CLI application to search Amazon.com",
         additional: 'Python Terminal App',
         gitHub: "https://github.com/u4ik/AmazonCLI",
