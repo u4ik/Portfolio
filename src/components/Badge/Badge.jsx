@@ -4,13 +4,20 @@ const Badge = ({ color, label, size = 'small', link = '', icon = '0', width = '8
     return (
         <div className={`ui ${color} labels normal`} style={{ width: width, margin: margin }} >
             <a href={link} className="ui label" target={"_blank"} style={{ width: '100%', margin: '0', padding: padding }}  >
-                <p style={{ margin: '0' }}>{label}
+                <p style={{
+                    margin: '0',
+                    display: 'flex',
+                    justifyContent: label === 'GitHub' || label === 'LinkedIn' ? '' : 'center',
+                    gap: '1em',
+                    alignItems: 'center'
+                }}>
                     {icon != 0 ?
                         <>
                             <i className={`icon ${icon} ${size} `} style={{ margin: '0' }}></i>
                         </>
                         : <></>
                     }
+                    {label}
                 </p>
             </a>
 

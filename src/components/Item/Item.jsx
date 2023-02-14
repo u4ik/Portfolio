@@ -19,15 +19,15 @@ function Item({ image, github = '', header = 'default header', description = 'de
                                 <SemItem.Image size='small' src={npm.img2} />
                             </div>
                         }
-                        <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '.5em', marginTop: '1em', marginBottom: '1em', maxHeight: '', alignItems: 'end' }}>
+                        <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '.5em', marginTop: '1em', marginBottom: '1em', maxHeight: '', alignItems: 'center' }}>
                             <Badge
                                 color='grey'
                                 label=''
                                 icon="github"
-                                size='default'
+                                size='large'
                                 margin=".1em .1em .1em .1em"
-                                width='3em'
-                                padding='0.07em'
+                                width='4em'
+                                padding='0.2em'
                                 link={github}
                             />
                             {
@@ -38,8 +38,8 @@ function Item({ image, github = '', header = 'default header', description = 'de
                                     icon="npm"
                                     size='large'
                                     margin=".1em .1em .1em .1em"
-                                    width='3em'
-                                    // padding='0'
+                                    width='4em'
+                                    padding='0.2em'
                                     link={npm.link}
                                 />
                             }
@@ -51,8 +51,8 @@ function Item({ image, github = '', header = 'default header', description = 'de
                                     icon=""
                                     size='large'
                                     margin=".1em .1em .1em .1em"
-                                    width='3em'
-                                    padding='0.07em'
+                                    width='4em'
+                                    padding='0.2em'
                                     link={viewLink}
                                 />
                             }

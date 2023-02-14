@@ -14,7 +14,7 @@ const Sidebar = () => {
 
                     <Badge
                         color='blue'
-                        label=''
+                        label={'LinkedIn'}
                         icon="linkedin"
                         size='big'
                         margin=".1em .1em .1em .1em"
@@ -26,7 +26,7 @@ const Sidebar = () => {
                     />
                     <Badge
                         color='grey'
-                        label=''
+                        label={'GitHub'}
                         icon="github"
                         size='big'
                         margin=".1em .1em .1em .1em"
