@@ -7,7 +7,7 @@ export default [
         link: ""
     },
     {
-        color: "white",
+        color: "red",
         label: "JavaScript",
         link: ""
     },
@@ -28,7 +28,7 @@ export default [
     },
     {
         color: "green",
-        label: "Redux",
+        label: "Styling Libraries",
         link: ""
     },
 ]
