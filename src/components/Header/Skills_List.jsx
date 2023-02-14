@@ -1,34 +1,38 @@
-
-
 export default [
     {
         color: "green",
         label: "Node",
-        link: ""
+        link: "",
+        icon: ""
     },
     {
         color: "red",
         label: "JavaScript",
-        link: ""
+        link: "",
+        icon: ""
     },
     {
         color: "blue",
         label: "TypeScript",
-        link: ""
+        link: "",
+        icon: ""
     },
     {
         color: "olive",
         label: "C#",
-        link: ""
+        link: "",
+        icon: ""
     },
     {
         color: "yellow",
         label: "Python",
-        link: ""
+        link: "",
+        icon: ""
     },
     {
         color: "green",
         label: "Styling Libraries",
-        link: ""
+        link: "",
+        icon: ""
     },
 ]

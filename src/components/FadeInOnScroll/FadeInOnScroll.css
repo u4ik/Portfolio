@@ -6,3 +6,12 @@
 .fade-in-target.fade-in {
   opacity: 1;
 }
+
+/* .fade-in-target {
+  filter: blur(1em);
+  transition: all 0.4s ease-in-out;
+}
+
+.fade-in-target.fade-in {
+  filter: blur(0);
+} */

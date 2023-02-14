@@ -26,6 +26,7 @@ const Header = () => {
         const showCl = setTimeout(() => {
             setShowCloud(true)
         }, 500)
+        console.log(scrollYProgress)
         return () => {
             clearTimeout(showBack)
             clearTimeout(showCl)
@@ -89,7 +90,7 @@ const Header = () => {
                                     <div className='col'>
                                         {
                                             skills.map((i, idx) => {
-                                                return <Badge key={idx} color={i.color} label={i.label} link={i.link} />
+                                                return <Badge key={idx} icon={i.icon} color={i.color} label={i.label} link={i.link} />
                                             })
                                         }
                                     </div>

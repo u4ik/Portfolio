@@ -1,5 +1,6 @@
 import React from 'react'
 import { Badge } from '../index'
+import { Divider, Container, Transition } from 'semantic-ui-react'
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -10,6 +11,7 @@ const Sidebar = () => {
         <div className="sidebar-container">
             <div className="sidebar-container_
             wrap">
+                {/* <Divider >_______________________________________</Divider> */}
                 <div style={{ display: 'flex', flexDirection: 'row', gap: '.5em', justifyContent: 'center' }}>
 
                     <Badge
