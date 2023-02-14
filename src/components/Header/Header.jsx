@@ -81,9 +81,12 @@ const Header = () => {
                                     {aboutText}
                                 </p>
                             </FadeInOnScroll>
+                            {/* <Divider >_______________________________________</Divider> */}
                         </div>
-                        <Divider >_______________________________________</Divider>
                         <div className="skills-wrapper">
+                            <div className="hide">
+                                <Divider >_______________________________________</Divider>
+                            </div>
                             <FadeInOnScroll>
                                 <h1 className="about-headings" >Skills</h1>
                                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: '', gap: '.5em' }}>

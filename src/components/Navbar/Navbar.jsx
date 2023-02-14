@@ -13,13 +13,13 @@ const Navbar = () => {
 
     return (
         <nav>
-            {/* <Popup
+            <Popup
                 on='click'
                 inverted
                 hideOnScroll
                 trigger={
                     <div style={{ width: '100%', backgroundColor: 'red', fontWeight: '300', paddingBottom: '', cursor: 'pointer', fontFamily: "Inter, Avenir, Helvetica, Arial, sans-serif" }}><b><p>
-                        Site is currently under construction 🛠️ (Click for me info!)
+                        Site is currently under construction 🛠️ (Click for more info!)
                     </p>
                     </b>
                     </div>}
@@ -27,7 +27,7 @@ const Navbar = () => {
                 content={'Currently importing my projects and redeploying 🛠️... \n Certain parts of the my site may not be available. \n Projects are currently being prioritized.'}
                 size='mini'
                 position='bottom center'
-                wide /> */}
+                wide />
             <ul>
                 <li>
                     <Link to="/"><i className={`icon home blue small`} style={{ marginRight: '' }}></i>Home</Link>

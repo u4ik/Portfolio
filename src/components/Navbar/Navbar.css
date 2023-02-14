@@ -47,7 +47,7 @@ nav ul li a {
     width: 100%;
     max-width: 100vw;
     /* background-color: pink; */
-    border: solid rgba(255, 255, 255, 0.5);
+    /* border: solid rgba(255, 255, 255, 0.5); */
     border-width: 0 0px 0.1em 0px;
   }
 }

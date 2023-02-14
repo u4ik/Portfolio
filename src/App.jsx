@@ -34,7 +34,7 @@ function App() {
       <CSSTransition
         in={showNav}
         timeout={300}
-        classNames="fade slide-left"
+        classNames="fade slide-bottom"
         unmountOnExit
       >
         <Sidebar />
