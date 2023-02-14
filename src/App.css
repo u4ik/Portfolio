@@ -8,6 +8,11 @@
   background-color: rgba(0, 0, 0, 1);
 }
 
+.App {
+  overflow-y: auto;
+  /* min-height: 100vh; */
+}
+
 .fade-enter {
   opacity: 0;
 }

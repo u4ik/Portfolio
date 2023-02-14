@@ -6,7 +6,7 @@ function Item({ image, github = '', header = 'default header', description = 'de
     return (
         <SemItem.Group>
             <SemItem>
-                <SemItem.Image size='large' src={image} />
+                <SemItem.Image fluid={true} ceneter={true} size='large' src={image} />
                 <SemItem.Content verticalAlign='middle'  >
                     <SemItem.Header as='a'>{header}</SemItem.Header>
                     <SemItem.Meta>{description}</SemItem.Meta>
@@ -52,7 +52,7 @@ function Item({ image, github = '', header = 'default header', description = 'de
                                     size='large'
                                     margin=".1em .1em .1em .1em"
                                     width='4em'
-                                    padding='0.2em'
+                                    padding='0.24em'
                                     link={viewLink}
                                 />
                             }
