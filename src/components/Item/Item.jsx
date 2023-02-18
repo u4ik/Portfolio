@@ -1,11 +1,12 @@
 import React from 'react'
 import { Image, Item as SemItem, Divider } from 'semantic-ui-react';
 import { Badge } from '../index';
+import './Item.css'
 
 function Item({ image, github = '', header = 'default header', description = 'default', additional = "", npm = "", viewLink = "" }) {
     return (
         <SemItem.Group>
-            <SemItem>
+            <SemItem className='item'>
                 <SemItem.Image centered={true} rounded={true} size='medium' src={image} style={{ maxWidth: '500px', minWidth: '200px' }} />
                 <SemItem.Content verticalAlign='middle'  >
                     <SemItem.Header as='a'>{header}</SemItem.Header>

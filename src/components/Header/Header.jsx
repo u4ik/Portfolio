@@ -62,9 +62,13 @@ const Header = () => {
                     {/* NAME + TITLE */}
                     <FadeInOnScroll>
                         <div className="name-title_wrapper">
-                            <h1 className="name" style={{ marginInline: '.3em' }} data-aos="fade" data-aos-easing='ease-in-out' data-aos-delay="50" data-aos-once="false">Amit Mangat</h1>
-                            <p className="title" style={{ margin: '0' }} data-aos="fade" data-aos-easing='ease-in-out'
-                                data-aos-delay="500" data-aos-once="false">Web Developer</p>
+                            <div className="mask">
+
+                                <h1 className="name" style={{ marginInline: '.3em' }} data-aos="fade" data-aos-easing='ease-in-out' data-aos-delay="50" data-aos-once="false">Amit Mangat</h1>
+                                {/* <h1 className="name name2" style={{ marginInline: '.3em' }} data-aos="fade" data-aos-easing='ease-in-out' data-aos-delay="50" data-aos-once="false">Amit Mangat</h1> */}
+                                <p className="title" style={{ margin: '0' }} data-aos="fade" data-aos-easing='ease-in-out'
+                                    data-aos-delay="500" data-aos-once="false">Web Developer</p>
+                            </div>
                         </div>
                     </FadeInOnScroll>
                 </header >
