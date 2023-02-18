@@ -40,7 +40,7 @@ export default [
     {
         header: 'AskAI',
         image: 'https://i.ibb.co/TmgDrm3/Ask-AI-demo2.png',
-        description: "CLI application to interact with OpenAI's chatgpt",
+        description: "CLI application to interact with OpenAI's ChatGPT",
         additional: 'JavaScript Terminal App',
         gitHub: "https://github.com/u4ik/AskAICLI",
         npm: {
@@ -70,6 +70,13 @@ export default [
         npm: "",
         viewLink: "https://u4ik.github.io/lottery/"
     },
-
-
+    {
+        header: 'OpenAI - ChatGPT/DALL-E',
+        image: 'https://i.ibb.co/NpFhC0N/openai3.png',
+        description: "Allows a user to interact with OpenAI's ChatGPT via a prompt command. As well as using DALL-E's image search. Images can also be uploaded to allow DALL-E to alter the image and provide up to 10 variations.",
+        additional: 'React Application',
+        gitHub: "https://github.com/u4ik/openaichat",
+        npm: "",
+        viewLink: "https://openaichat.netlify.app/"
+    },
 ]
