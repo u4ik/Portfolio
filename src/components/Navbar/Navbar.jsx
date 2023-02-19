@@ -26,7 +26,7 @@ const Navbar = () => {
                         </div>}
                     style={style}
                     content={'Currently importing my projects and redeploying 🛠️... \n Certain parts of the my site may not be available. \n Projects are currently being prioritized.'}
-                    size='big'
+                    size='large'
                     position='bottom center'
                     wide />
                 <ul>
