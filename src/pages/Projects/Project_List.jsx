@@ -1,4 +1,31 @@
 export default [
+    
+    {
+        header: 'CLI_Quotes',
+        image: 'https://i.ibb.co/y0YsvHB/cliquotes.png',
+        description: 'Display quotes in your terminal, additional option to display on each new instance (Powershell only)',
+        additional: 'JavaScript Terminal App',
+        gitHub: "https://github.com/u4ik/cli_quotes",
+        npm: {
+            link: "https://www.npmjs.com/package/cli_quotes",
+            img1: "https://img.shields.io/npm/dt/cli_quotes.svg?style=flat",
+            img2: "https://img.shields.io/npm/v/cli_quotes.svg?style=flat"
+        },
+        viewLink: ""
+    },
+    {
+        header: 'RecipeFinder',
+        image: 'https://i.ibb.co/qRCXwhQ/recipefinder.png',
+        description: 'Quickly browse for recipes using specific ingredients (in your pantry/fridge). Save recipes and ingredients.',
+        additional: 'JavaScript Terminal App',
+        gitHub: "https://github.com/u4ik/recipefinder",
+        npm: {
+            link: "https://www.npmjs.com/package/recipefinder",
+            img1: "https://img.shields.io/npm/dt/recipefinder.svg?style=flat",
+            img2: "https://img.shields.io/npm/v/recipefinder.svg?style=flat"
+        },
+        viewLink: ""
+    },
     {
         header: 'ProGrader',
         image: 'https://i.ibb.co/TgRBN6Z/black.png',
