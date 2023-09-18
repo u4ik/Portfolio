@@ -1,1 +1,49 @@
-export default "Hello, I'm Amit & welcome to my portfolio. I've been a developer for the past few years. I've been involved with technology my whole life. With hardware, I've assembled my own computers, fiddled with different components and have performed my own repairs on devices for myself and others. Starting in Feb. 2020, I've ventured down the path to understand the coding side of technology, attending a coding bootcamp(Eleven Fifty Academy) to learn Javascript, and the modern practices of Web Development. \n After 6 months of intensive learning, I graduated from the bootcamp, quickly understanding the fundamentals during the early stages. Due to my performance during the course, I was offered to become a learning assistant for Javascript and Web development from the academy. As a learning assistant, my role covered debugging/teaching the new students enrolled in the same WebDev course that I graduated from. 6 months after that, I was offered to being a instructor trainee. To where I taught new students through live coding lessons, helping them a bit further to understand the core concepts, along with debugging, and guiding them towards success throughout the course. \n Since taking on that role, I still continue to learn, polishing off my skills, and demonstrating what I have learned along the way. Having a keen eye for detail, I've always favored work with UI/UX, although I am fully experienced with both frontend and backend frameworks, having the ability to develop full stack applications."
+export default {
+    introText: 
+    `Hello and welcome to my portfolio! I'm thrilled to have you here. Let me take a moment to introduce myself and share my journey into the world of web development.`,
+    about: {
+        header: "About Me:",
+        text: "I'm passionate about coding and solving intricate problems. My journey into the world of web development has been an exciting adventure fueled by my curiosity and love for creating elegant solutions. With a detail-oriented mind and a keen eye for design, I'm dedicated to crafting digital experiences that not only work flawlessly but also captivate users."
+    },
+    approach: {
+        header: "My Approach:",
+        text: "When it comes to web development, I firmly believe that less is often more. I have a penchant for minimalistic designs and strive to create user interfaces that are both intuitive and aesthetically pleasing. My commitment to optimal UI/UX practices ensures that every project I undertake is user-friendly and engaging."
+    },
+    skills: {
+        header: "My Skills:",
+        text: "I'm well-versed in a range of programming languages, with JavaScript, Python, and C# being my primary tools of choice. Beyond the basics, I have a deep understanding of advanced programming methods, features, and design patterns. This knowledge empowers me to tackle complex challenges and implement innovative solutions effectively."
+    },
+    frameworks: {
+        header: "Frameworks and Full Stack Development:",
+        text: "Working with frameworks is second nature to me, with React being my go-to choice for building dynamic and interactive web applications. I've also delved into the realm of full-stack development, leveraging various stack approaches to create comprehensive solutions that seamlessly integrate front-end and back-end technologies."
+    },
+    projects: {
+        header: "My Projects:",
+        text: "Feel free to explore my portfolio to see some of the exciting projects I've worked on. Each project is a testament to my commitment to excellence and my passion for pushing the boundaries of web development."
+    },
+    contact: {
+        header: "Contact Me:",
+        text: "Have a project in mind or simply want to connect? I'd love to hear from you! Feel free to reach out through the contact form on this website, and let's start a conversation about how we can work together to bring your ideas to life."
+    },
+    closeText: "Thank you for visiting my portfolio, and I look forward to the possibility of collaborating with you to create exceptional digital experiences."
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
