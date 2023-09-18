@@ -1,6 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
-import { Divider, Container, Transition,List } from "semantic-ui-react";
+import {
+  Divider,
+  Container,
+  Transition,
+  List,
+  Icon,
+
+  Button,
+} from "semantic-ui-react";
 import Cloud from "../../assets/cloud.png";
 import Background from "../../assets/landscapegrey.png";
 import skills from "./Skills_List";
@@ -13,6 +21,10 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import "./Header.css";
 
 const Header = () => {
+
+
+  const myRef = useRef(null)
+
   const [showBackground, setShowBackground] = useState(false);
   const [showCloud, setShowCloud] = useState(false);
   const { scrollY, scrollYProgress } = useScroll();
@@ -25,7 +37,6 @@ const Header = () => {
     const showCl = setTimeout(() => {
       setShowCloud(true);
     }, 500);
-    console.log(scrollYProgress);
     return () => {
       clearTimeout(showBack);
       clearTimeout(showCl);
@@ -33,12 +44,20 @@ const Header = () => {
   }, []);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log("Page scroll: ", latest);
+    // console.log("Page scroll: ", latest);
   });
 
+  const scrollToBottom = () =>{ 
+
+    myRef.current?.scrollIntoView({ 
+      block: "end", 
+      behavior: 'smooth'
+    }); 
+  }; 
+
   return (
-    <div data-aos="fade" data-aos-easing="ease-in-out">
-      <div className="wrapper">
+    <div  data-aos="fade" data-aos-easing="ease-in-out">
+      <div  className="wrapper">
         <header style={{ display: "flex", flexDirection: "column" }}>
           {/* Background */}
           <CSSTransition
@@ -90,12 +109,15 @@ const Header = () => {
                 >
                   Web Developer
                 </p>
+                <div className="name-title_scroll-button">
+                  <Icon className="name-title_scroll-icon animate bounce" size="large" name="arrow alternate circle down outline" onClick={scrollToBottom}/>
+                </div>
               </div>
             </div>
           </FadeInOnScroll>
         </header>
 
-        <div className="about_skills-overlay">
+        <div ref={myRef} className="about_skills-overlay">
           <div className="about_skills-container">
             <div className="about-wrapper">
               <FadeInOnScroll>
@@ -115,7 +137,7 @@ const Header = () => {
               </FadeInOnScroll>
               {/* <Divider >_______________________________________</Divider> */}
             </div>
-            <div className="skills-wrapper">
+            <div   className="skills-wrapper">
               <div className="hide">
                 <Divider>_______________________________________</Divider>
               </div>
@@ -130,29 +152,28 @@ const Header = () => {
                     gap: ".5em",
                   }}
                 >
-                <div className="col">
-                <List  verticalAlign="">
-                  {skills.map((i, idx) => {
-                    return (
-                      <List.Item>
-                        {/* <List.Header>Helen</List.Header> */}
-                        {/* <Image avatar src="/images/avatar/small/helen.jpg" /> */}
-                        <List.Content>
-                          <Badge
-                            key={idx}
-                            size={"large"}
-                            icon={i.icon}
-                            color={i.color}
-                            label={i.label}
-                            link={i.link}
-                          />
-                        </List.Content>
-                      </List.Item>
-                    );
-                  })}
-                </List>
-                </div>
-
+                  <div className="col">
+                    <List verticalAlign="middle">
+                      {skills.map((i, idx) => {
+                        return (
+                          <List.Item>
+                            {/* <List.Header>Helen</List.Header> */}
+                            {/* <Image avatar src="/images/avatar/small/helen.jpg" /> */}
+                            <List.Content>
+                              <Badge
+                                key={idx}
+                                size={"large"}
+                                icon={i.icon}
+                                color={i.color}
+                                label={i.label}
+                                link={i.link}
+                              />
+                            </List.Content>
+                          </List.Item>
+                        );
+                      })}
+                    </List>
+                  </div>
                 </div>
                 <div className="hide" style={{ marginTop: "2em" }}>
                   <Divider>_______________________________________</Divider>

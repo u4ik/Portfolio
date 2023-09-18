@@ -131,6 +131,26 @@ mask {
     font-family: "Quicksand", sans-serif;
 }
 
+.name-title_scroll-button {
+    margin-top: 1em;
+    filter: invert(1);
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    opacity: .4;
+}
+
+.name-title_scroll-icon {
+    cursor: pointer;
+    -webkit-animation-name: bounce1;
+    animation-name: bounce1;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
 .about_skills-overlay {
     /* background: url("../../assets/landscapegrey_nobackground2.png"); */
     background: black;
@@ -206,5 +226,29 @@ mask {
 @media only screen and (max-width: 750px) {
     .hide {
         display: block;
+    }
+}
+
+@keyframes bounce1 {
+    70% {
+        transform: translateY(-30%);
+    }
+    80% {
+        transform: translateY(-15%);
+    }
+    90% {
+        transform: translateY(0%);
+    }
+    95% {
+        transform: translateY(-7%);
+    }
+    97% {
+        transform: translateY(0%);
+    }
+    99% {
+        transform: translateY(-3%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
