@@ -24,19 +24,21 @@ const Contact = () => {
                                 id="email"
                                 type="email"
                                 name="email"
+                                required
                             />
                             <ValidationError
                                 prefix="Email"
                                 field="email"
                                 errors={state.errors}
                             />
-                            <label htmlFor="message">
+                            <label htmlFor="message" >
                                 Message:
                             </label>
                             <textarea
                                 className="contact-text"
                                 id="message"
                                 name="message"
+                                required
                             />
                             <ValidationError
                                 prefix="Message"
