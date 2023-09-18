@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
-import { Divider, Container, Transition } from "semantic-ui-react";
+import { Divider, Container, Transition,List } from "semantic-ui-react";
 import Cloud from "../../assets/cloud.png";
 import Background from "../../assets/landscapegrey.png";
 import skills from "./Skills_List";
@@ -100,15 +100,13 @@ const Header = () => {
             <div className="about-wrapper">
               <FadeInOnScroll>
                 {/* <h1 className="about-headings" >About</h1> */}
-                <p>
-                  {/* {aboutText.introText} */}
-                </p>
+                <p>{/* {aboutText.introText} */}</p>
                 <h3 className="about-headings">{aboutText.about.header}</h3>
                 <p>{aboutText.about.text}</p>
                 <h3 className="about-headings">{aboutText.approach.header}</h3>
-                <p>{aboutText.approach.text}</p> 
-                <h3 className="about-headings">{aboutText.skills.header}</h3> 
-                <p>{aboutText.skills.text}</p> 
+                <p>{aboutText.approach.text}</p>
+                <h3 className="about-headings">{aboutText.skills.header}</h3>
+                <p>{aboutText.skills.text}</p>
                 <h3 className="about-headings">{aboutText.projects.header}</h3>
                 <p>{aboutText.projects.text}.</p>
                 {/* <p className="about-text">
@@ -132,27 +130,29 @@ const Header = () => {
                     gap: ".5em",
                   }}
                 >
-                  <div className="col">
-                    {skills.map((i, idx) => {
-                      return (
-                        <Badge
-                          key={idx}
-                          icon={i.icon}
-                          color={i.color}
-                          label={i.label}
-                          link={i.link}
-                        />
-                      );
-                    })}
-                  </div>
-                  <div className="col">
-                    <Badge color="blue" label="PostgreSQL" />
-                    <Badge color="orange" label="REST APIs" />
-                    <Badge color="blue" label="React" />
-                    <Badge color="red" label="MongoDB" />
-                    <Badge color="grey" label="Redux" />
-                    <Badge color="blue" label="Recoil" />
-                  </div>
+                <div className="col">
+                <List  verticalAlign="">
+                  {skills.map((i, idx) => {
+                    return (
+                      <List.Item>
+                        {/* <List.Header>Helen</List.Header> */}
+                        {/* <Image avatar src="/images/avatar/small/helen.jpg" /> */}
+                        <List.Content>
+                          <Badge
+                            key={idx}
+                            size={"large"}
+                            icon={i.icon}
+                            color={i.color}
+                            label={i.label}
+                            link={i.link}
+                          />
+                        </List.Content>
+                      </List.Item>
+                    );
+                  })}
+                </List>
+                </div>
+
                 </div>
                 <div className="hide" style={{ marginTop: "2em" }}>
                   <Divider>_______________________________________</Divider>
