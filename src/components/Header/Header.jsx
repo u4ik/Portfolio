@@ -6,7 +6,6 @@ import {
   Transition,
   List,
   Icon,
-
   Button,
 } from "semantic-ui-react";
 import Cloud from "../../assets/cloud.png";
@@ -21,9 +20,7 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import "./Header.css";
 
 const Header = () => {
-
-
-  const myRef = useRef(null)
+  const myRef = useRef(null);
 
   const [showBackground, setShowBackground] = useState(false);
   const [showCloud, setShowCloud] = useState(false);
@@ -47,17 +44,16 @@ const Header = () => {
     // console.log("Page scroll: ", latest);
   });
 
-  const scrollToBottom = () =>{ 
-
-    myRef.current?.scrollIntoView({ 
-      block: "end", 
-      behavior: 'smooth'
-    }); 
-  }; 
+  const scrollToBottom = () => {
+    myRef.current?.scrollIntoView({
+      block: "end",
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <div  data-aos="fade" data-aos-easing="ease-in-out">
-      <div  className="wrapper">
+    <div data-aos="fade" data-aos-easing="ease-in-out">
+      <div className="wrapper">
         <header style={{ display: "flex", flexDirection: "column" }}>
           {/* Background */}
           <CSSTransition
@@ -69,12 +65,12 @@ const Header = () => {
             <img
               style={{ opacity: scrollYProgress }}
               src={Background}
-              alt=""
+              alt="background image"
               className="background"
             />
           </CSSTransition>
-          {/* Cloud */}
 
+          {/* Cloud */}
           <CSSTransition
             in={showCloud}
             timeout={300}
@@ -98,7 +94,7 @@ const Header = () => {
                 >
                   Amit Mangat
                 </h1>
-                {/* <h1 className="name name2" style={{ marginInline: '.3em' }} data-aos="fade" data-aos-easing='ease-in-out' data-aos-delay="50" data-aos-once="false">Amit Mangat</h1> */}
+
                 <p
                   className="title"
                   style={{ margin: "0" }}
@@ -110,7 +106,12 @@ const Header = () => {
                   Web Developer
                 </p>
                 <div className="name-title_scroll-button">
-                  <Icon className="name-title_scroll-icon animate bounce" size="large" name="arrow alternate circle down outline" onClick={scrollToBottom}/>
+                  <Icon
+                    className="name-title_scroll-icon "
+                    size="large"
+                    name="arrow alternate circle down outline"
+                    onClick={scrollToBottom}
+                  />
                 </div>
               </div>
             </div>
@@ -137,44 +138,32 @@ const Header = () => {
               </FadeInOnScroll>
               {/* <Divider >_______________________________________</Divider> */}
             </div>
-            <div   className="skills-wrapper">
-              <div className="hide">
-                <Divider>_______________________________________</Divider>
-              </div>
+            <div className="skills-wrapper">
               <FadeInOnScroll>
                 <h1 className="about-headings">Skills</h1>
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    flexWrap: "",
-                    gap: ".5em",
-                  }}
-                >
-                  <div className="col">
-                    <List verticalAlign="middle">
-                      {skills.map((i, idx) => {
-                        return (
-                          <List.Item>
-                            {/* <List.Header>Helen</List.Header> */}
-                            {/* <Image avatar src="/images/avatar/small/helen.jpg" /> */}
-                            <List.Content>
-                              <Badge
-                                key={idx}
-                                size={"large"}
-                                icon={i.icon}
-                                color={i.color}
-                                label={i.label}
-                                link={i.link}
-                              />
-                            </List.Content>
-                          </List.Item>
-                        );
-                      })}
-                    </List>
-                  </div>
+                <div className="">
+                  <Divider>_______________________________________</Divider>
                 </div>
+                <div className="col">
+                  <List verticalAlign="middle">
+                    {skills.map((i, idx) => {
+                      return (
+                        <List.Item key={idx}>
+                          <List.Content>
+                            <Badge
+                              size={"large"}
+                              icon={i.icon}
+                              color={i.color}
+                              label={i.label}
+                              link={i.link}
+                            />
+                          </List.Content>
+                        </List.Item>
+                      );
+                    })}
+                  </List>
+                </div>
+                {/* </div> */}
                 <div className="hide" style={{ marginTop: "2em" }}>
                   <Divider>_______________________________________</Divider>
                 </div>

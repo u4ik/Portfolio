@@ -5,13 +5,10 @@ import 'aos/dist/aos.css';
 import './Project.css';
 import projects from './Project_List'
 
-
 const Projects = () => {
     return (
-
-        <div style={{ height: '90vh', overflowX: 'hidden', paddingBottom: '0', minWidth: '100vw', width: '100%', scrollPaddingRight: '0' }}>
-
-            <div className="project-container">
+        <div style={{ height: '90vh',overflowX: 'hidden', paddingBottom: '0', minWidth: '100vw', width: '100%', scrollPaddingRight: '0' }}>
+            <div className="project-container" >
                 {
                     projects.map((p, idx) => {
                         return (
@@ -22,9 +19,8 @@ const Projects = () => {
                     })
                 }
             </div>
-
         </div>
     )
 }
 
-export default Projects
+export default Projects;

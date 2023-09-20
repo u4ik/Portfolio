@@ -5,14 +5,14 @@ import './Item.css'
 
 function Item({ image, github = '', header = 'default header', description = 'default', additional = "", npm = "", viewLink = "" }) {
     return (
-        <SemItem.Group>
-            <SemItem className='item'>
-                <SemItem.Image centered={true} rounded={true} size='medium' src={image} style={{ maxWidth: '500px', minWidth: '200px' }} />
-                <SemItem.Content verticalAlign='middle'  >
+        <SemItem.Group style={{margin:'10%'}}>
+            <SemItem className='item' >
+                <SemItem.Image centered={true} rounded={true} size='medium' src={image} style={{ maxWidth: '500px', minWidth: '300px' }} />
+                <SemItem.Content verticalAlign='middle' style={{maxWidth:'25em', minWidth: '', marginInline:'auto'}}    >
                     <SemItem.Header as='a'>{header}</SemItem.Header>
-                    <SemItem.Meta style={{ maxWidth: '35em', marginInline: 'auto' }}>{description}</SemItem.Meta>
+                    <SemItem.Meta style={{ maxWidth: '25em', marginInline: 'auto' }}>{description}</SemItem.Meta>
                     <SemItem.Extra>{additional}</SemItem.Extra>
-                    <SemItem.Description >
+                    <SemItem.Description  >
                         {
                             npm &&
                             <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '.5em' }}>

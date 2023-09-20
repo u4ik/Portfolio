@@ -134,16 +134,14 @@ mask {
 .name-title_scroll-button {
     margin-top: 1em;
     filter: invert(1);
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
     opacity: .4;
 }
 
 .name-title_scroll-icon {
     cursor: pointer;
-    -webkit-animation-name: bounce1;
-    animation-name: bounce1;
-    -webkit-animation-duration: 2s;
+    /* -webkit-animation-name: bounce1; */
+    /* animation-name: bounce1; */
+    /* -webkit-animation-duration: 2s; */
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -206,6 +204,7 @@ mask {
 .col {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5em;
 }
 
@@ -231,7 +230,7 @@ mask {
 
 @keyframes bounce1 {
     70% {
-        transform: translateY(-30%);
+        transform: translateY(-20%);
     }
     80% {
         transform: translateY(-15%);

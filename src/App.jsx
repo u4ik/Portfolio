@@ -23,20 +23,10 @@ function App() {
 
   return (
     <div className="App">
-      <CSSTransition
-        in={showNav}
-        timeout={300}
-        classNames="fade slide-top"
-        unmountOnExit
-      >
+      <CSSTransition in={showNav} timeout={300} classNames="fade slide-top" unmountOnExit>
         <Navbar />
       </CSSTransition>
-      <CSSTransition
-        in={showNav}
-        timeout={300}
-        classNames="fade slide-bottom"
-        unmountOnExit
-      >
+      <CSSTransition in={showNav} timeout={300} classNames="fade slide-bottom" unmountOnExit>
         <Sidebar />
       </CSSTransition>
       <Routes>
