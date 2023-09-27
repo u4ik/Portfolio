@@ -6,8 +6,11 @@ import './Item.css'
 function Item({ image, github = '', header = 'default header', description = 'default', additional = "", npm = "", viewLink = "" }) {
     return (
         <SemItem.Group style={{margin:'10%'}}>
-            <SemItem className='item' >
-                <SemItem.Image centered={true} rounded={true} size='medium' src={image} style={{ maxWidth: '500px', minWidth: '300px' }} />
+            <SemItem className='item'>
+                <div style={{display:'flex',justifyContent: 'center',marginInline:'auto'}}>
+
+                <SemItem.Image centered={true} rounded={true} size='medium' src={image} style={{ maxWidth: '', minWidth: '',marginBottom:'1em' }} />
+                </div>
                 <SemItem.Content verticalAlign='middle' style={{maxWidth:'25em', minWidth: '', marginInline:'auto'}}    >
                     <SemItem.Header as='a'>{header}</SemItem.Header>
                     <SemItem.Meta style={{ maxWidth: '25em', marginInline: 'auto' }}>{description}</SemItem.Meta>

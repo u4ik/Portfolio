@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import { Popup, Icon } from 'semantic-ui-react'
@@ -13,12 +13,15 @@ function App() {
   const [showSide, setShowSide] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
+    let timeout = setTimeout(() => {
       setShowNav(true)
     }, 1500)
-    setTimeout(() => {
-      setShowSide(true)
-    }, 1500)
+    // setTimeout(() => {
+    //   setShowSide(true)
+    // }, 1500)
+    return () => {
+      clearTimeout(timeout)
+    }
   }, [])
 
   return (

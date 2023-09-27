@@ -7,7 +7,7 @@ import projects from './Project_List'
 
 const Projects = () => {
     return (
-        <div style={{ height: '90vh',overflowX: 'hidden', paddingBottom: '0', minWidth: '100vw', width: '100%', scrollPaddingRight: '0' }}>
+        <div style={{ height: '90vh',overflowX: 'hidden', paddingBottom: '0', width: '100%', scrollPaddingRight: '0' }}>
             <div className="project-container" >
                 {
                     projects.map((p, idx) => {

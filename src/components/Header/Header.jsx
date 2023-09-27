@@ -41,7 +41,7 @@ const Header = () => {
   }, []);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    // console.log("Page scroll: ", latest);
+    console.log("Page scroll: ", latest);
   });
 
   const scrollToBottom = () => {
@@ -52,66 +52,39 @@ const Header = () => {
   };
 
   return (
-    <div data-aos="fade" data-aos-easing="ease-in-out">
+    // <div data-aos="fade" data-aos-easing="ease-in-out">
       <div className="wrapper">
         <header style={{ display: "flex", flexDirection: "column" }}>
           {/* Background */}
-          <CSSTransition
-            in={showBackground}
-            timeout={300}
-            classNames="fade"
-            unmountOnExit
-          >
-            <img
-              style={{ opacity: scrollYProgress }}
-              src={Background}
-              alt="background image"
-              className="background"
-            />
+          <CSSTransition in={showBackground} timeout={300} classNames="fade" unmountOnExit>
+            <img 
+            style={{ opacity: scrollYProgress }} 
+            src={Background}
+             alt="background image" className="background" />
+
           </CSSTransition>
 
           {/* Cloud */}
-          <CSSTransition
-            in={showCloud}
-            timeout={300}
-            classNames="fade"
-            unmountOnExit
-          >
-            <img src={Cloud} alt="" className="foreground" />
+          <CSSTransition in={showCloud} timeout={300} classNames="fade" unmountOnExit>
+            <img
+             src={Cloud}
+              alt="" className="foreground" />
           </CSSTransition>
 
           {/* NAME + TITLE */}
           <FadeInOnScroll>
             <div className="name-title_wrapper">
               <div className="mask">
-                <h1
-                  className="name"
-                  style={{ marginInline: ".3em" }}
-                  data-aos="fade"
-                  data-aos-easing="ease-in-out"
-                  data-aos-delay="50"
-                  data-aos-once="false"
-                >
+                <h1 className="name" style={{ marginInline: ".3em" }} data-aos="fade" data-aos-easing="ease-in-out" data-aos-delay="50" data-aos-once="false">
                   Amit Mangat
                 </h1>
 
-                <p
-                  className="title"
-                  style={{ margin: "0" }}
-                  data-aos="fade"
-                  data-aos-easing="ease-in-out"
-                  data-aos-delay="500"
-                  data-aos-once="false"
-                >
+                <p className="title" style={{ margin: "0" }} data-aos="fade" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-once="false">
                   Web Developer
                 </p>
+
                 <div className="name-title_scroll-button">
-                  <Icon
-                    className="name-title_scroll-icon "
-                    size="large"
-                    name="arrow alternate circle down outline"
-                    onClick={scrollToBottom}
-                  />
+                  <Icon className="name-title_scroll-icon " size="large" name="arrow alternate circle down outline" onClick={() => scrollToBottom()}/>
                 </div>
               </div>
             </div>
@@ -119,11 +92,10 @@ const Header = () => {
         </header>
 
         <div ref={myRef} className="about_skills-overlay">
-          <div className="about_skills-container">
+          <div   className="about_skills-container">
             <div className="about-wrapper">
               <FadeInOnScroll>
-                {/* <h1 className="about-headings" >About</h1> */}
-                <p>{/* {aboutText.introText} */}</p>
+   
                 <h3 className="about-headings">{aboutText.about.header}</h3>
                 <p>{aboutText.about.text}</p>
                 <h3 className="about-headings">{aboutText.approach.header}</h3>
@@ -132,11 +104,8 @@ const Header = () => {
                 <p>{aboutText.skills.text}</p>
                 <h3 className="about-headings">{aboutText.projects.header}</h3>
                 <p>{aboutText.projects.text}.</p>
-                {/* <p className="about-text">
-                                    {aboutText}
-                                </p> */}
+   
               </FadeInOnScroll>
-              {/* <Divider >_______________________________________</Divider> */}
             </div>
             <div className="skills-wrapper">
               <FadeInOnScroll>
@@ -151,6 +120,7 @@ const Header = () => {
                         <List.Item key={idx}>
                           <List.Content>
                             <Badge
+                              clickable={false}
                               size={"large"}
                               icon={i.icon}
                               color={i.color}
@@ -163,7 +133,6 @@ const Header = () => {
                     })}
                   </List>
                 </div>
-                {/* </div> */}
                 <div className="hide" style={{ marginTop: "2em" }}>
                   <Divider>_______________________________________</Divider>
                 </div>
@@ -172,7 +141,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 
