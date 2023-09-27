@@ -16,11 +16,12 @@ function App() {
     let timeout = setTimeout(() => {
       setShowNav(true)
     }, 1500)
-    // setTimeout(() => {
-    //   setShowSide(true)
-    // }, 1500)
+    let timeout2 = setTimeout(() => {
+      setShowSide(true)
+    }, 1500)
     return () => {
-      clearTimeout(timeout)
+      clearTimeout(timeout);
+      clearTimeout(timeout2);
     }
   }, [])
 
