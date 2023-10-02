@@ -18,7 +18,7 @@ export default [
         image: 'https://i.ibb.co/qRCXwhQ/recipefinder.png',
         description: 'Quickly browse for recipes using specific ingredients (in your pantry/fridge). Save recipes and ingredients.',
         additional: 'JavaScript Terminal App',
-        gitHub: "https://github.com/u4ik/recipefinder",
+        gitHub: "https://github.com/u4ik/cli-recipe-finder",
         npm: {
             link: "https://www.npmjs.com/package/recipefinder",
             img1: "https://img.shields.io/npm/dt/recipefinder.svg?style=flat",
