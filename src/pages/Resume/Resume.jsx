@@ -30,7 +30,7 @@ const Resume = () => {
       }}
     >
       <iframe
-        src="https://drive.google.com/file/d/1BiKGYaSudSZnpkFBrOR4SEsK4pYidhW2/preview"
+        src="https://drive.google.com/file/d/1VLZcuQhDSR3iDm5cZzjrsxCtbeL-D46s/preview"
         width="100%"
         height="83%"
         allow="autoplay"
